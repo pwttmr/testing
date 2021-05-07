@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int x=0,y=0;
+	char s[100];
+	cin>>s;
+	for (int i=0;1;i++){
+		switch (int(s[i])){
+			case 82:
+				x+=1;
+				break;
+			case 76:
+				x-=1;
+				break;
+			case 85:
+				y+=1;
+				break;
+			case 68:
+				y-=1;
+				break;
+		}
+		if (int(s[i])==0)
+			break;
+	}
+	cout<<x<<" "<<y<<endl;
+	return 0;
+}
